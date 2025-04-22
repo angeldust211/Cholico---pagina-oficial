@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cholico - Artista</title>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #111;
+      color: white;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      background: url('portada-hd.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      display: none;
+    }
+
+    .logo {
+      font-family: 'UnifrakturCook', cursive;
+      font-size: 5rem;
+      z-index: 2;
+    }
+
+    .scroll-down {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      animation: bounce 2s infinite;
+      z-index: 2;
+    }
+
+    .scroll-down span {
+      display: inline-block;
+      transform: rotate(90deg);
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, 15px); }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        background: none;
+        background-color: #111;
+      }
+
+      header::before {
+        display: block;
+      }
+    }
+
+    .album-section {
+      padding: 50px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .album-card {
+      background-color: #222;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .footer {
+      padding: 40px 20px;
+      background-color: #000;
+      text-align: center;
+    }
+
+    .socials {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .yt-videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 225px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CHOLICO</div>
+    <div class="scroll-down"><span>&#10140;</span></div>
+  </header>
+
+  <section class="album-section" id="albums">
+    <iframe width="553" height="411" src="https://www.youtube.com/embed/dlC2pBDcD08" title="CHOLICO - XICURI EP // PSYCHEDELIC TRANCE 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="601" height="480" src="https://www.youtube.com/embed/1k5vj0L0CrU?list=OLAK5uy_kClciIDZZI5Wa_DfkKtOvuyIQRupFG0Tk" title="El de los Jordan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="1224" height="480" src="https://www.youtube.com/embed/x3PMYzbFCpk" title="INTERDIMENSIONAL" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="1224" height="480" src="https://www.youtube.com/embed/C9jyOZ4yZHQ" title="MALA RACHA (2024 Remastered Version)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Agrega más según necesites -->
+  </section>
+
+  <footer class="footer">
+    <div class="socials">
+      <div>Correo: tuemail@ejemplo.com</div>
+      <div>Instagram: @tuusuario</div>
+      <div>YouTube: /tucanal</div>
+      <div>YT Music: [enlace]</div>
+    </div>
+
+    <div class="yt-videos">
+      <iframe width="750" height="422" src="https://www.youtube.com/embed/_7t182J30JM" title="Cholico - Interdimensional (demo)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="750" height="422" src="https://www.youtube.com/embed/B4B4FLjLSk8" title="Cholico - Rumores (Prod. Zoowe) Videoclip" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <iframe src="" allowfullscreen></iframe>
+      <iframe width="1224" height="480" src="https://www.youtube.com/embed/la0Ne0zSvEs" title="CHOLICO - TEORIA SINTERGICA EP (Mex Psytrance 2025)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </footer>
+</body>
+</html>
